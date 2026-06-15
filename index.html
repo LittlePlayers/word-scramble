@@ -122,6 +122,10 @@
   .pop{animation:pop .3s ease}
   @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-7px)}75%{transform:translateX(7px)}}
   .shake{animation:shake .3s ease}
+  /* --- mobile/tablet responsiveness guard --- */
+  html,body{overflow-x:hidden}
+  body>*{max-width:100%}
+  @media (max-width:600px){ .sub,.help{font-size:.84rem} }
 </style>
 </head>
 <body>
